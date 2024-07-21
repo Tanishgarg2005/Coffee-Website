@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Coffee Bliss</title>
+
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <style>
+        .topline {
+            background-color: #6f4e37;
+            color: white;
+            text-align: center;
+            height: 30px;
+            font-weight: lighter;
+        }
+
+        .navbar {
+            background-color: #333;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .hero-section {
+            background-image: linear-gradient(to right, #6f4e37, #c0a68b);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .featured-coffees {
+            padding: 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .coffee-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .coffee-item {
+            margin: 10px;
+            flex-basis: 30%;
+            padding: 20px;
+            background-color: #eee;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .coffee-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .about-us,
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+        }
+
+        .hero-section a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo {
+            width: auto;
+            height: 100px;
+            margin-left: 50px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="topline">
+            <p>Start Your Day with a Smile</p>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://i.pinimg.com/474x/bf/ec/84/bfec84b441e3a0faa25d4c9b095d5a4d.jpg" alt="Coffee Bliss" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <h1>Welcome to Coffee Bliss</h1>
+        <p>Discover your perfect cup of coffee.</p>
+        <button class="btn btn-primary"><a href="contact.html">Shop Now</a></button>
+    </div>
+
+    <div class="featured-coffees container mt-5">
+        <h2>Featured Coffees</h2>
+        <div class="coffee-list row">
+            <div class="coffee-item col-md-4">
+                <img src="https://blogstudio.s3.theshoppad.net/coffeeheroau/ec178d83e5f597b162cda1e60cb64194.jpg" alt="Espresso">
+                <h3>Espresso</h3>
+                <p>Rich and bold, with a concentrated flavor.</p>
+            </div>
+            <div class="coffee-item col-md-4">
+                <img src="https://images.arla.com/recordid/F2DA5762-13BB-4FF4-88839FDE14DE1993/chocolate-latte.jpg?width=1200&height=630&mode=crop&format=jpg" alt="Latte">
+                <h3>Latte</h3>
+                <p>Creamy and smooth, with a perfect blend of milk and coffee.</p>
+            </div>
+            <div class="coffee-item col-md-4">
+                <img src="https://media.istockphoto.com/id/505168330/photo/cup-of-cafe-latte-with-coffee-beans-and-cinnamon-sticks.jpg?s=612x612&w=0&k=20&c=h7v8kAfWOpRapv6hrDwmmB54DqrGQWxlhP_mTeqTQPA=" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>Foamy and velvety, a classic choice for coffee lovers.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-us container mt-5">
+        <h2>About Us</h2>
+        <p>We are passionate about coffee and committed to bringing you the best coffee experience. Our beans are sourced from top-quality producers around the world, and each cup is made with love and care.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Coffee Bliss. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Your Order - Coffee Bliss</title>
+
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <style>
+        .topline {
+            background-color: #6f4e37;
+            color: white;
+            text-align: center;
+            height: 30px;
+        }
+
+        .navbar {
+            background-color: #333;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .hero-section {
+            background-image: linear-gradient(to right, #6f4e37, #c0a68b);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: #fff;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+        }
+
+        .hero-section a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo {
+            width: auto;
+            height: 100px;
+            margin-left: 50px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="topline">
+            <p>Start Your Day with a Smile</p>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="https://i.pinimg.com/474x/bf/ec/84/bfec84b441e3a0faa25d4c9b095d5a4d.jpg" alt="Coffee Bliss" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <h1>Welcome to Coffee Bliss</h1>
+        <p>Discover your perfect cup of coffee.</p>
+        <button class="btn btn-primary"><a href="index.html">Go Back</a></button>
+    </div>
+
+    <div class="container">
+        <h2>Place Your Order</h2>
+        <form>
+            <div class="mb-3">
+                <label for="customerName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="customerName" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+                <label for="customerEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="customerEmail" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="coffeeSelection" class="form-label">Select Coffee</label>
+                <select class="form-select" id="coffeeSelection">
+                    <option selected>Choose...</option>
+                    <option value="espresso">Espresso</option>
+                    <option value="latte">Latte</option>
+                    <option value="cappuccino">Cappuccino</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="orderQuantity" class="form-label">Quantity</label>
+                <input type="number" class="form-control" id="orderQuantity" placeholder="How many?">
+            </div>
+            <div class="mb-3">
+                <label for="customerAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="customerAddress" placeholder="1234 Main St">
+            </div>
+            <div class="mb-3">
+                <label for="additionalNotes" class="form-label">Additional Notes</label>
+                <textarea class="form-control" id="additionalNotes" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Order</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Coffee Bliss. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
