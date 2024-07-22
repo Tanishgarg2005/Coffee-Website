@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Coffee Bliss</title>
+
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <style>
+        .topline {
+            background-color: #6f4e37;
+            color: white;
+            text-align: center;
+            height: 30px;
+            font-size: 0.9em;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+        }
+
+        .navbar .nav-link {
+            color: white;
+        }
+
+        .navbar .nav-link:hover {
+            color: #c0a68b;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .hero-section {
+            background-image: linear-gradient(to right, #6f4e37, #c0a68b);
+            background-size: cover;
+            color: rgb(105, 9, 9);
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .about-us,
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+        }
+
+        .hero-section a {
+            color: rgb(78, 9, 9);
+        }
+
+        .logo {
+            width: auto;
+            height: 100px;
+            margin-left: 50px;
+            float: left;
+        }
+
+        .menu-section {
+            padding: 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .menu-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            margin: 10px;
+            flex-basis: 30%;
+            padding: 20px;
+            background-color: #eee;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            flex-grow: 1;
+        }
+
+        .menu-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="topline">
+            <p>Start Your Day with a Smile</p>
+        </div>
+        <nav class="navbar sticky-top">
+            <div class="container-fluid">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <img class="logo" src="https://i.pinimg.com/474x/bf/ec/84/bfec84b441e3a0faa25d4c9b095d5a4d.jpg" alt="">
+        <h1>Welcome to Coffee Bliss</h1>
+        <p>Explore our delicious coffee offerings.</p>
+        <button><a href="contact.html">Order Now</a></button>
+    </div>
+
+    <div class="container menu-section">
+        <h2> Menu</h2>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 menu-item">
+                <img src="https://blogstudio.s3.theshoppad.net/coffeeheroau/ec178d83e5f597b162cda1e60cb64194.jpg"
+                    alt="Espresso">
+                <h3>Espresso</h3>
+                <p>Rich and bold, with a concentrated flavor.</p>
+                <p>Price -250</p>
+            </div>
+            <div class="col-md-4 col-sm-6 menu-item">
+                <img src="https://images.arla.com/recordid/F2DA5762-13BB-4FF4-88839FDE14DE1993/chocolate-latte.jpg?width=1200&height=630&mode=crop&format=jpg"
+                    alt="Latte">
+                <h3>Latte</h3>
+                <p>Creamy and smooth, with a perfect blend of milk and coffee.</p>
+                <p c>Price -250</p>
+            </div>
+            <div class="col-md-4 col-sm-6 menu-item">
+                <img src="https://media.istockphoto.com/id/505168330/photo/cup-of-cafe-latte-with-coffee-beans-and-cinnamon-sticks.jpg?s=612x612&w=0&k=20&c=h7v8kAfWOpRapv6hrDwmmB54DqrGQWxlhP_mTeqTQPA="
+                    alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p>Foamy and velvety, a classic choice for coffee lovers.</p>
+                <p>Price -250</p>
+            </div>
+            <div class="col-md-4 col-sm-6 menu-item">
+                <img src="https://www.foodandwine.com/thmb/xQZv2CX6FO5331PYK7uGPF1we9Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Partners-Flat-White-FT-BLOG0523-b11f6273c2d84462954c2163d6a1076d.jpg"
+                    alt="Flat White">
+                <h3>Flat White</h3>
+                <p>A balanced coffee with a creamy texture and velvety microfoam.</p>
+                <p>Price -250</p>
+            </div>
+            <div class="col-md-4 col-sm-6 menu-item">
+                <img src="https://www.thespruceeats.com/thmb/863O-HoGf6j9MzXWU5ql7sJ0Vac=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/caramelmacchiato-2-f5d9acb8178c4136a43202100d8e61d7.jpg"
+                    alt="Macchiato">
+                <h3>Macchiato</h3>
+                <p>Espresso marked with a small amount of steamed milk.</p>
+                <p>Price -250</p>
+            </div>
+            <div class="col-md-4 col-sm-6 menu-item">
+                <img src="https://xoxobella.com/wp-content/uploads/2021/02/the_easy_way_to_make_Irish_cream_coffee_bella_bucchiotti_5.jpg"
+                    alt="Irish Coffee">
+                <h3>Irish Coffee</h3>
+                <p>Classic coffee with Irish whiskey, sugar, and topped with cream.</p>
+                <p>Price -250</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Coffee Bliss. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
